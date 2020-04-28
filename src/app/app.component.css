@@ -1,0 +1,5 @@
+.app{
+display: grid;
+grid-template-rows: 140px auto 55px;
+height: 100%;
+}

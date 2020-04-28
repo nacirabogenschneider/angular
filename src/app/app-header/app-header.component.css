@@ -1,0 +1,14 @@
+.navigation{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 120px;
+    display:flex;
+    justify-content: center;
+  
+
+}
+.navigation img{
+    height: 120px;
+    width: 120px;
+}
