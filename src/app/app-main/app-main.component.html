@@ -1,32 +1,23 @@
 
 
-<p class="main">
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-    app-main works! app-main works! app-main works! app-main works!app-main works! 
-</p>
+<section class="main">
+  
+  <div class='card'>
+      <h1> Nacira Bogenschneider</h1>
+      <h3>Web Developer & Graphic Designer</h3>
+      <button *ngIf="isCollapsed" (click)="toggleCollapse()" >Kontaktinformationen</button> 
+      <div *ngIf="!isCollapsed">
+          <p>Telefonummer: 0172 / 123 45 678</p>
+          <p>E-Mail: mail@some-email.de</p>
+          <p>www.webaddress.de</p>
+      </div>
+      <button *ngIf="!isCollapsed" (click)="toggleCollapse()" >schließen</button>
+  </div>
+
+  <div>
+    User name: <input type='text' [(ngModel)]='inputText'>
+    <button>Suchen</button>
+  </div>
+
+</section>
+

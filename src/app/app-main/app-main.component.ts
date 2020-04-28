@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app-main.component.css']
 })
 export class AppMainComponent implements OnInit {
-
+  inputText: string = "Hier rein schreiben"
+  isCollapsed: boolean = true
   constructor() { }
 
+  toggleCollapse(){
+    this.isCollapsed = !this.isCollapsed
+  }
   ngOnInit(): void {
+
   }
 
 }
