@@ -1,6 +1,11 @@
 .footer{
-    border: 1px solid green;
+    display: flex;
+    justify-content: center;
     width: auto;
     height: 100%;
-    margin: 0 20px;
+    padding: 20px;
+    margin: 0;
+    border-top-right-radius: 225px ;
+    z-index: 300;
+    box-shadow: 0 0 10px 2px rgba(185, 175, 175, 0.5);
 }
