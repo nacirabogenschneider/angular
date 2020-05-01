@@ -1,0 +1,21 @@
+.main{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ }
+ .card{
+    margin: 40px 20px;
+    padding: 20px;
+    border: 0.5px solid lightgrey;
+    border-radius: 12px;
+    max-width: 400px;
+    box-shadow: 0 0 10px 2px rgba(185, 175, 175, 0.5);
+ }
+ button{
+    border: 1px solid lightgrey;
+    padding: 8px;
+    margin: 8px;
+    border-radius: 12px;
+}
+ 

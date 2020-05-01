@@ -7,6 +7,11 @@ import { AppMainComponent } from './app-main/app-main.component';
 import { AppFooterComponent } from './app-footer/app-footer.component';
 import { DateComponent } from './date/date.component';
 import { HttpClientModule} from '@angular/common/http';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { HomeComponent } from './home/home.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -14,12 +19,17 @@ import { HttpClientModule} from '@angular/common/http';
     AppHeader,
     AppMainComponent,
     AppFooterComponent,
-    DateComponent
+    DateComponent,
+    HomeComponent,
+    ProjectsComponent,
+    AboutMeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule  
   ],
   providers: [],
   bootstrap: [AppComponent]

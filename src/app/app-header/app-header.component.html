@@ -1,9 +1,10 @@
 
 <section class='navigation'>
-    <img src="../../assets/img/header.jpg"/> 
+    <a [routerLink]="['/']"><img src="../../assets/img/header.jpg"/> </a>
+
     <div class='icons'>
-        <div>Projects</div>
-        <div>About me</div>
-        <div>Contact</div>
+        <a [routerLink]="['/projects']"  routerLinkActive="active">Projects</a>
+        <a [routerLink]="['/about-me']" routerLinkActive="active" >About Me</a>
+        <a [routerLink]="['/contact']" routerLinkActive="active" >Contact</a>
     </div>  
 </section>
