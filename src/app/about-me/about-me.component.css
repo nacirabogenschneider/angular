@@ -4,18 +4,23 @@
     justify-content: center;
 }
 .git{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 40px 20px;
-    padding: 20px;
+    margin: 40px 0;
+    box-sizing: border-box;
+    padding: 16px 12px;
     border: 2px solid #dbdbdb;
     border-radius: 12px;
-    max-width: 400px;
+    width: 340px;
+    color: #888585;
 }
 
 input{
     border-radius: 12px;
     padding: 8px;
     margin: 8px;
+    box-sizing: border-box;
 
 }
 button{
@@ -23,9 +28,11 @@ button{
     padding: 8px;
     margin: 8px;
     border-radius: 12px;
+    box-sizing: border-box;
 }
 .category_wrap{
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -36,7 +43,14 @@ button{
     border: 1.4px solid #dbdbdb;
     border-radius: 50%;
     background: white;
-    margin: 20px 40px;
+    margin: 20px 0;
+}
+.button_wrap{
+    display: flex;
+    width: 360px;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 }
 .image_wrap{
     margin-top: 40px;
@@ -58,5 +72,6 @@ button{
     margin: 0;
 }
 .active{
+    fill: black;
     color: black;
 }

@@ -1,0 +1,15 @@
+.skill_wrap{
+width: 300px;
+padding: 20px;
+margin: 10px 0;
+border: 2px solid #dbdbdb;
+border-radius: 12px;
+
+}
+
+.skill_style{
+    font-size: 0.95rem;
+    padding: 0 10px 0 0;
+    line-height: 2rem;
+    color: #888585;
+}

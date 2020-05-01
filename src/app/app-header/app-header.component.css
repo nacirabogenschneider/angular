@@ -16,14 +16,22 @@
 
 .icons{
     margin-top: 0;
-    width: 60%;
+    width: 450px;
     display: flex;
     justify-content: space-evenly;
-    @media (max-width: 576px) {
-        width: 100%;
-      }
-
 }
+
+@media (max-width: 420px) {
+    .icons{ 
+      width: 260px;
+    }
+  } 
+  @media (max-width: 370px) {
+    .icons{ 
+      width: 220px;
+    }
+  } 
+
 img{
     height: 120px;
     width: 340px;
@@ -32,7 +40,7 @@ img{
 a{
     text-decoration: none;
     color: #383535;
-    font-size:1rem;
+    font-size:0.9rem;
     line-height: 24px;
     padding: 0 6px;
    
