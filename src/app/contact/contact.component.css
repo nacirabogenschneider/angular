@@ -1,5 +1,4 @@
-.main{
-    
+.main{  
     width: 100%;
     display: flex;
     justify-content: center;
@@ -11,6 +10,7 @@
    border: 2px solid #dbdbdb;
    border-radius: 12px;
  }
+
  button{
     border: 2px solid lightgrey;
     padding: 8px;
