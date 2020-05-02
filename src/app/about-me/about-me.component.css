@@ -24,7 +24,7 @@ input{
 
 }
 button{
-    border: 1px solid #dbdbdb;
+    border: 2px solid #dbdbdb;
     padding: 8px;
     margin: 8px;
     border-radius: 12px;
@@ -40,7 +40,7 @@ button{
 .categorie{
     width: 50px;
     height: 50px;
-    border: 1.4px solid #dbdbdb;
+    border: 2px solid #dbdbdb;
     border-radius: 50%;
     background: white;
     margin: 20px 0;
@@ -57,7 +57,7 @@ button{
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    border: 1.4px solid #dbdbdb;
+    border: 2px solid #dbdbdb;
     object-fit: cover; 
     object-position: center; 
 }

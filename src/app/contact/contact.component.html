@@ -1,12 +1,12 @@
 <section class="main">
     <div class='card'>
-        <h1> Nacira Bogenschneider</h1>
-        <h3>Web Developer & Graphic Designer</h3>
+        <h1>{{contactData.name}}</h1>
+        <h3>{{contactData.job}}</h3>
         <button *ngIf="isCollapsed" (click)="toggleCollapse()" >Kontaktinformationen</button> 
         <div *ngIf="!isCollapsed">
-            <p>Telefonummer: 0172 / 123 45 678</p>
-            <p>E-Mail: mail@some-email.de</p>
-            <p>www.webaddress.de</p>
+            <p>Phone: {{contactData.phone}}</p>
+            <p>E-Mail:  <a href="mailto:{{contactData.web}}">{{contactData.email}}</a></p>
+            <p>Website: <a href="{{contactData.web}}">{{contactData.web}}</a></p>
         </div>
         <button *ngIf="!isCollapsed" (click)="toggleCollapse()" >schließen</button>
     </div>
