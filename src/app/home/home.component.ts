@@ -46,7 +46,21 @@ export class HomeComponent implements OnInit {
     'html5',
     'node.js',
     'react.js',
-    'angular.js' 
+    'angular.js',
+    'jquery',
+    'frontend',
+    'web developer',
+    'fullstack',
+    'englisch',
+    'deutsch',
+    'german',
+    'english',
+    'scrum',
+    'kanban',
+    'agil',
+    'developer',
+    'firefox',
+    'firestore'
 
   ]
   

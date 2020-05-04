@@ -16,6 +16,10 @@
     border: 2px solid #dbdbdb;
     border-radius: 12px;
   }
+  .project p{
+    line-height: 1.8rem;
+    font-weight: 200;
+}
   .project_img{
       border: 1px solid black;
       height: 520px;
