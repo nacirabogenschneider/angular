@@ -38,22 +38,28 @@ export class HomeComponent implements OnInit {
     'unit',
     'testing',
     'cypress',
+    'git',
+    'github',
+    'bootstrap',
+    'es6',
+    'css3',
+    'html5',
+    'node.js',
+    'react.js',
+    'angular.js' 
 
   ]
   
-  skillsToHave = [{'skill': 'Java', 'match': false},{'skill': 'PHP', 'match': true}] 
+  skillsToHave = [] 
   response: string
   matchSkills: string= "styled-skill"
 
 
 
   addToArray() :void{
-   this.response && this.skillsToHave.push({'skill': this.response, 'match': this.skillsIHave.includes(this.response)})
+   this.response && this.skillsToHave.push({'skill': this.response, 'match': this.skillsIHave.includes(this.response.toLocaleLowerCase())})
     console.log(this.skillsToHave)
     this.response = ''
-    
-   
-    console.log(this.isPartOf)
   }
 
   constructor() { }
