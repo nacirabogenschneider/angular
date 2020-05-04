@@ -1,0 +1,18 @@
+<section class="intro_wrap">
+<div class="intro">
+    <h3>Skill Matcher</h3>
+    <p>Sie suchen einen Junior Web Developer aber wissen nicht ob meine Skills und Ihre Aufgeben zusammen passen?</p>
+    <p>Tragen Sie Ihren Tech Stack in meinen Skill Matcher ein uns sehen Sie bei wie viel Prozent unser Business Match liegt</p>
+</div>
+<div class="matcher">
+    <div>
+        <input type='text'required [(ngModel)]='response'>
+        <button (click)="addToArray()">eintragen</button>
+    </div>
+</div>
+<div class="skill-wrap" >
+<span [ngClass]="isPartOf ? 'styled-skill': 'no-skill'" *ngFor="let skill of skillsToHave">
+    {{skill}}
+</span>
+</div>
+</section>

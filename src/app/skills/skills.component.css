@@ -1,4 +1,7 @@
 .skill_wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 width: 300px;
 padding: 20px;
 margin: 10px 0;

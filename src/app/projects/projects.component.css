@@ -2,6 +2,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
  }
 
 .project{
@@ -10,8 +12,12 @@
     justify-content: center;
     width: 300px;
     padding: 20px;
-    margin: 40px 0 20px 0;
+    margin: 40px 10px 20px 10px;
     border: 2px solid #dbdbdb;
     border-radius: 12px;
   }
-  
+  .project_img{
+      border: 1px solid black;
+      height: 520px;
+      width: 300px;
+  }

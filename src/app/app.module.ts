@@ -15,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { EducationComponent } from './education/education.component';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    AppRoutingModule  
+    AppRoutingModule,
+    BrowserAnimationsModule  
   ],
   providers: [],
   bootstrap: [AppComponent]
