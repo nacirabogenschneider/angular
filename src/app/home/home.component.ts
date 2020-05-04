@@ -40,19 +40,20 @@ export class HomeComponent implements OnInit {
     'cypress',
 
   ]
-  isPartOf: boolean = false
-  skillsToHave = ['Java', 'PHP', 'JavaScript'] 
+  
+  skillsToHave = [{'skill': 'Java', 'match': false},{'skill': 'PHP', 'match': true}] 
   response: string
   matchSkills: string= "styled-skill"
 
 
-  addToArray() :void{
-   this.response && this.skillsToHave.push(this.response)
-    console.log(this.skillsToHave)
 
+  addToArray() :void{
+   this.response && this.skillsToHave.push({'skill': this.response, 'match': this.skillsIHave.includes(this.response)})
+    console.log(this.skillsToHave)
     this.response = ''
     
-    
+   
+    console.log(this.isPartOf)
   }
 
   constructor() { }

@@ -11,8 +11,8 @@
     </div>
 </div>
 <div class="skill-wrap" >
-<span [ngClass]="isPartOf ? 'styled-skill': 'no-skill'" *ngFor="let skill of skillsToHave">
-    {{skill}}
+<span [ngClass]="skill.match ? 'styled-skill': 'no-skill'" *ngFor="let skill of skillsToHave">
+    {{skill.skill}}
 </span>
 </div>
 </section>
