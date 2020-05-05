@@ -16,4 +16,9 @@
     {{skill.skill}}
 </span>
 </div>
+<div *ngIf="skillInput.touched && !skillInput.valid" class="match-section">
+    <button class="skill-button" (click)="matching()">Show Business Match</button>
+    <div *ngIf="matchesInProcent" class="counter">{{matchesInProcent}} %</div>
+    <!--<div > <span class="styled-skill" *ngFor="let matchy of matchies">{{matchy.skill}}</span></div>-->
+</div>
 </section>

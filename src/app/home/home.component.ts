@@ -29,7 +29,6 @@ export class HomeComponent implements OnInit {
     'indesign',
     'gimp',
     'inkscape',
-    'java',
     'wordpress',
     'joomla',
     'express',
@@ -61,21 +60,23 @@ export class HomeComponent implements OnInit {
     'developer',
     'firefox',
     'firestore'
-
   ]
   
   skillsToHave = [] 
   response: string
   matchSkills: string= "styled-skill"
-
-
+  matchies =[]
+  matchesInProcent: number
 
   addToArray() :void{
    this.response && this.skillsToHave.push({'skill': this.response, 'match': this.skillsIHave.includes(this.response.toLocaleLowerCase())})
-    console.log(this.skillsToHave)
+
     this.response = ''
   }
 
+matching():void{
+this.matchesInProcent = Math.floor(100 /(this.skillsToHave.length / this.matchies.length) )
+}
   constructor() { }
 
   ngOnInit(): void {

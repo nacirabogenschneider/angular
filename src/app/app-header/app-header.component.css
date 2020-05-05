@@ -23,14 +23,11 @@
 
 @media (max-width: 420px) {
     .icons{ 
-      width: 260px;
+      width: 280px;
+      margin-left: 20px;
     }
   } 
-  @media (max-width: 370px) {
-    .icons{ 
-      width: 220px;
-    }
-  } 
+
 
 img{
     height: 120px;
