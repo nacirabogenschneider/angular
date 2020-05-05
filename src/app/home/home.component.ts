@@ -69,17 +69,19 @@ export class HomeComponent implements OnInit {
   matchesInProcent: number
 
   addToArray() :void{
-   this.response && this.skillsToHave.push({'skill': this.response, 'match': this.skillsIHave.includes(this.response.toLocaleLowerCase())})
-
-    this.response = ''
+   this.response && this.skillsToHave.push({'skill': this.response, 'match': this.skillsIHave.includes(this.response.toLowerCase())})
+  
+   this.response = ''
   }
 
-matching():void{
-this.matchesInProcent = Math.floor(100 /(this.skillsToHave.length / this.matchies.length) )
-}
+  matching():void{
+
+  this.matchies = this.skillsToHave.filter(m => m.match == true)
+  this.matchesInProcent = Math.floor(100 /(this.skillsToHave.length / this.matchies.length))
+  console.log('Matchies', this.matchies )
+  }
+
   constructor() { }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }
