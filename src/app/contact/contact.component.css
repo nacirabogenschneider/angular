@@ -1,4 +1,7 @@
 .main{  
+   display: flex;
+   flex-direction: column;
+ align-items: center;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -17,11 +20,13 @@
     margin: 8px;
     border-radius: 12px;
 }
+button:hover{
+   box-shadow: 0 0 8px 1px rgba(9, 170, 162, 0.7);
+}
  
 h3{
    font-size: 1.1rem;
 }
-
 a{
    text-decoration: none;
    color: #098070;
@@ -30,4 +35,12 @@ a{
 }
 .active{
    color: #8112ad; 
+}
+.social{
+   display: flex;
+  align-items: center;
+}
+.social a :hover{
+   
+   fill: #098070;
 }

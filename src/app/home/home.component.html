@@ -2,14 +2,14 @@
 <div class="skill-matcher-wrap">
     <div class="intro">
         <h3>Skill Matcher</h3>
-        <p>Sie suchen einen Junior Web Developer aber wissen nicht ob meine Skills und Ihre Aufgaben zusammen passen?</p>
-        <p>Tragen Sie Ihren Tech Stack in meinen Skill Matcher ein und sehen Sie, bei wie viel Prozent unser Business Match liegt</p>
+        <p>You are looking for a Junior Web Developer but don't know if my skills and your tasks fit together?</p>
+        <p>Enter your Tech Stack into my Skill Matcher and see at what percentage our Business Match is.</p>
     </div>
     <div class="matcher border-blue">
         <form>
             <input class="skill-input" placeholder="Wunsch-Skill eintragen" #skillInput="ngModel" name="skillInput" type='text'required [(ngModel)]='response'>
-            <button class="skill-button" (click)="addToArray()">eintragen</button>
-            <div class="skill-error" *ngIf="skillInput.touched && !skillInput.valid">Bitte tragen Sie einen Wunsch-Skill ein.</div>
+            <button class="skill-button" (click)="addToArray()">add</button>
+            <div class="skill-error" *ngIf="skillInput.touched && !skillInput.valid">Please enter a desired skill.</div>
         </form>
     </div>
     <div class="skill-wrap" >
@@ -18,8 +18,9 @@
     </span>
     </div>
     <div *ngIf="skillInput.touched && !skillInput.valid" class="match-section">
-        <button class="skill-button border-blue" (click)="matching()">Show Business Match</button>
+        <button class="skill-button border-blue margin-bo" (click)="matching()">Show Business Match</button>
         <div *ngIf="matchies && matchesInProcent" class="counter">{{matchesInProcent}}%</div>
+        <button *ngIf="matchies && matchesInProcent" class="skill-button border-blue margin-bo"  [routerLink]="['/contact']" >Get in touch</button>
     </div>
 </div>
 
