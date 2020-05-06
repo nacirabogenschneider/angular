@@ -1,23 +1,26 @@
 <section class="intro_wrap">
-<div class="intro">
-    <h3>Skill Matcher</h3>
-    <p>Sie suchen einen Junior Web Developer aber wissen nicht ob meine Skills und Ihre Aufgaben zusammen passen?</p>
-    <p>Tragen Sie Ihren Tech Stack in meinen Skill Matcher ein uns sehen Sie bei wie viel Prozent unser Business Match liegt</p>
+<div class="skill-matcher-wrap">
+    <div class="intro">
+        <h3>Skill Matcher</h3>
+        <p>Sie suchen einen Junior Web Developer aber wissen nicht ob meine Skills und Ihre Aufgaben zusammen passen?</p>
+        <p>Tragen Sie Ihren Tech Stack in meinen Skill Matcher ein und sehen Sie, bei wie viel Prozent unser Business Match liegt</p>
+    </div>
+    <div class="matcher border-blue">
+        <form>
+            <input class="skill-input" placeholder="Wunsch-Skill eintragen" #skillInput="ngModel" name="skillInput" type='text'required [(ngModel)]='response'>
+            <button class="skill-button" (click)="addToArray()">eintragen</button>
+            <div class="skill-error" *ngIf="skillInput.touched && !skillInput.valid">Bitte tragen Sie einen Wunsch-Skill ein.</div>
+        </form>
+    </div>
+    <div class="skill-wrap" >
+    <span [ngClass]="skill.match ? 'styled-skill': 'no-skill'" *ngFor="let skill of skillsToHave">
+        {{skill.skill}}
+    </span>
+    </div>
+    <div *ngIf="skillInput.touched && !skillInput.valid" class="match-section">
+        <button class="skill-button border-blue" (click)="matching()">Show Business Match</button>
+        <div *ngIf="matchies && matchesInProcent" class="counter">{{matchesInProcent}}%</div>
+    </div>
 </div>
-<div class="matcher">
-    <form>
-        <input class="skill-input" placeholder="Wunsch-Skill eintragen" #skillInput="ngModel" name="skillInput" type='text'required [(ngModel)]='response'>
-        <button class="skill-button" (click)="addToArray()">eintragen</button>
-        <div class="skill-error" *ngIf="skillInput.touched && !skillInput.valid">Bitte tragen Sie einen Wunsch-Skill ein.</div>
-    </form>
-</div>
-<div class="skill-wrap" >
-<span [ngClass]="skill.match ? 'styled-skill': 'no-skill'" *ngFor="let skill of skillsToHave">
-    {{skill.skill}}
-</span>
-</div>
-<div *ngIf="skillInput.touched && !skillInput.valid" class="match-section">
-    <button class="skill-button" (click)="matching()">Show Business Match</button>
-    <div *ngIf="matchies && matchesInProcent" class="counter">{{matchesInProcent}} %</div>
-</div>
+
 </section>

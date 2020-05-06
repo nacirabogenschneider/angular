@@ -16,6 +16,13 @@
     border: 2px solid #dbdbdb;
     border-radius: 12px;
   }
+  .project:hover{
+    box-shadow: 0 0 8px 1px rgba(9, 170, 162, 0.7); 
+  }
+  .project:hover svg{
+    stroke: rgba(9, 170, 162);
+  }
+
   .project p{
     line-height: 1.8rem;
     font-weight: 200;
@@ -24,4 +31,14 @@
       border: 1px solid black;
       height: 520px;
       width: 300px;
+  }
+  .footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .icon-wrap{
+    display: flex;
+    width: 70px;
+    justify-content: space-between;
   }

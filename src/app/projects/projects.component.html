@@ -1,30 +1,103 @@
 <section class="main">
+
 <div class="project">
     <h3>Schulweg</h3>
-    <p>Das Webdeveloper-Bootcamp bei neuefische beinhaltet ein digitales Gesellenstück, dies ist eine App oder Webanwendung die man in den letzten 4 Wochen des Bootcamps entwickelt. Dies geschieht nach Scrum Methode mit daily standups und wöchentlichen sprints.</p>
-    <p>Mein Digitales Gesellenstück ist eine React App. Mit Ihr können sich Eltern organisieren um Ihre Grundschulkinder in begleiteten Gruppen zur Schule gehen zu lassen. </p>
-    <img class="project_img" src="https://media.giphy.com/media/YqPz2a4mGVDfV6Eo1e/giphy.gif">
-    <p>Dazu loggen sich die Eltern in die App ein. Sie erstellen ein Profil und tragen sich und ihre Kinder dort ein. Danach wählen Sie Bundesland und eine Schule aus. Dort können Sie sich in vorhandene Treffpunkte eintragen oder Eigene erstellen. Vom Treffpunkt aus erstellen Sie eine Laufliste mit Namen und Uhrzeit wann die Gruppe losläuft. Andere Eltern können nun sich und ihre Kinder oder nur ihre Kinder für die Laufliste eintragen.</p>
-    <p>Das gemeinsame zur Schule gehen in begleiteten Gruppen entlastet Eltern und Verkehr gleichermaßen. Sie wirkt der Elterntaxi-Problematik entgegen, ohne dass die Eltern sich Sorgen machen müssen, ob das Kind sicher zur Schule gelangt. </p>
-    <h3>Verwendete Technologien</h3>
-    <p>React, JSX, JavaScript, React-Hooks, Styled Components, Google Maps API, Google Places API, Local Storage, React-Router, Adobe Comp, Github, Storybook, Jest, Cypress </p>
+    <p>Schulweg - sicher zur Schule - ist eine React App. Mit Ihr können sich Eltern organisieren um Ihre Grundschulkinder in begleiteten Gruppen zur Schule gehen zu lassen. </p>
+    <div *ngIf="isCollapsedProjectOne">    
+        <img class="project_img" src="../../assets/img/schoolway.png">
+        <h3>Verwendete Technologien</h3>
+        <p>React, JSX, JavaScript, React-Hooks, Styled Components, React Spring, Google Maps API, Google Places API, Local Storage, React-Router, Adobe Comp, Github, Storybook, Jest, Cypress </p>
+    </div>
+    <div class="footer">
+        <div class="icon-wrap">
+            <a href="https://github.com/nacirabogenschneider/capstone-project">
+            <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill="#494949" viewBox='0 0 512 512'><title>ionicons-v5_logos</title><path d='M256,32C132.3,32,32,134.9,32,261.7c0,101.5,64.2,187.5,153.2,217.9a17.56,17.56,0,0,0,3.8.4c8.3,0,11.5-6.1,11.5-11.4,0-5.5-.2-19.9-.3-39.1a102.4,102.4,0,0,1-22.6,2.7c-43.1,0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1,1.4-14.1h.1c22.5,2,34.3,23.8,34.3,23.8,11.2,19.6,26.2,25.1,39.6,25.1a63,63,0,0,0,25.6-6c2-14.8,7.8-24.9,14.2-30.7-49.7-5.8-102-25.5-102-113.5,0-25.1,8.7-45.6,23-61.6-2.3-5.8-10-29.2,2.2-60.8a18.64,18.64,0,0,1,5-.5c8.1,0,26.4,3.1,56.6,24.1a208.21,208.21,0,0,1,112.2,0c30.2-21,48.5-24.1,56.6-24.1a18.64,18.64,0,0,1,5,.5c12.2,31.6,4.5,55,2.2,60.8,14.3,16.1,23,36.6,23,61.6,0,88.2-52.4,107.6-102.3,113.3,8,7.1,15.2,21.1,15.2,42.5,0,30.7-.3,55.5-.3,63,0,5.4,3.1,11.5,11.4,11.5a19.35,19.35,0,0,0,4-.4C415.9,449.2,480,363.1,480,261.7,480,134.9,379.7,32,256,32Z'/></svg>
+        </a>
+        <a href="https://schulweg.nacira.de/">
+            <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 512 512'><title>ionicons-v5-e</title><path d='M256,48C141.13,48,48,141.13,48,256s93.13,208,208,208,208-93.13,208-208S370.87,48,256,48Z' style='fill:none;stroke:#494949 ;stroke-miterlimit:10;stroke-width:32px'/><path d='M256,48c-58.07,0-112.67,93.13-112.67,208S197.93,464,256,464s112.67-93.13,112.67-208S314.07,48,256,48Z' style='fill:none; stroke:#494949 ;stroke-miterlimit:10;stroke-width:32px'/><path d='M117.33,117.33c38.24,27.15,86.38,43.34,138.67,43.34s100.43-16.19,138.67-43.34' style='fill:none;stroke:#494949;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/><path d='M394.67,394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43,16.19-138.67,43.34' style='fill:none;stroke:#494949;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/><line x1='256' y1='48' x2='256' y2='464' style='fill:none;stroke:#494949;stroke-miterlimit:10;stroke-width:32px'/><line x1='464' y1='256' x2='48' y2='256' style='fill:none;stroke:#494949;stroke-miterlimit:10;stroke-width:32px'/></svg>
+        </a>
+     </div>
+        <svg *ngIf="isCollapsedProjectOne" (click)="toggleCollapseOne()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        <svg *ngIf="!isCollapsedProjectOne" (click)="toggleCollapseOne()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </div>
 </div>
 
 <div class="project">
     <h3>Home Schooling</h3>
     <p>Home Schooling ist ein Projekt, welches Lehrer und Eltern dabei unterstützen soll, die Lernmaterialien für das home schooling digital zu unterstützen und sich zu Hause noch besser zu strukturiere. </p>
-    <img class="project_img" src="../../assets/img/homeschooling.png">
-    <h3>Verwendete Technologien</h3>
-    <p>React, JSX, JavaScript, React-Hooks, Styled Components, React-Router, Adobe Comp, Github, Firebase </p>
+    <div *ngIf="isCollapsedProjectTwo">    
+        <img class="project_img" src="../../assets/img/homeschooling.png">
+        <h3>Verwendete Technologien</h3>
+        <p>React, JSX, JavaScript, React-Hooks, Styled Components, React-Router, Adobe Comp, Github, Firebase </p>
+    </div>
+    <div class="footer">
+        <div class="icon-wrap">
+            <a href="https://github.com/nacirabogenschneider/homeschooling">
+            <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill="#494949" viewBox='0 0 512 512'><title>ionicons-v5_logos</title><path d='M256,32C132.3,32,32,134.9,32,261.7c0,101.5,64.2,187.5,153.2,217.9a17.56,17.56,0,0,0,3.8.4c8.3,0,11.5-6.1,11.5-11.4,0-5.5-.2-19.9-.3-39.1a102.4,102.4,0,0,1-22.6,2.7c-43.1,0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1,1.4-14.1h.1c22.5,2,34.3,23.8,34.3,23.8,11.2,19.6,26.2,25.1,39.6,25.1a63,63,0,0,0,25.6-6c2-14.8,7.8-24.9,14.2-30.7-49.7-5.8-102-25.5-102-113.5,0-25.1,8.7-45.6,23-61.6-2.3-5.8-10-29.2,2.2-60.8a18.64,18.64,0,0,1,5-.5c8.1,0,26.4,3.1,56.6,24.1a208.21,208.21,0,0,1,112.2,0c30.2-21,48.5-24.1,56.6-24.1a18.64,18.64,0,0,1,5,.5c12.2,31.6,4.5,55,2.2,60.8,14.3,16.1,23,36.6,23,61.6,0,88.2-52.4,107.6-102.3,113.3,8,7.1,15.2,21.1,15.2,42.5,0,30.7-.3,55.5-.3,63,0,5.4,3.1,11.5,11.4,11.5a19.35,19.35,0,0,0,4-.4C415.9,449.2,480,363.1,480,261.7,480,134.9,379.7,32,256,32Z'/></svg>
+        </a>
+        <a href="https://homeschooling.nacira.de/">
+            <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 512 512'><title>ionicons-v5-e</title><path d='M256,48C141.13,48,48,141.13,48,256s93.13,208,208,208,208-93.13,208-208S370.87,48,256,48Z' style='fill:none;stroke:#494949 ;stroke-miterlimit:10;stroke-width:32px'/><path d='M256,48c-58.07,0-112.67,93.13-112.67,208S197.93,464,256,464s112.67-93.13,112.67-208S314.07,48,256,48Z' style='fill:none; stroke:#494949 ;stroke-miterlimit:10;stroke-width:32px'/><path d='M117.33,117.33c38.24,27.15,86.38,43.34,138.67,43.34s100.43-16.19,138.67-43.34' style='fill:none;stroke:#494949;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/><path d='M394.67,394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43,16.19-138.67,43.34' style='fill:none;stroke:#494949;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/><line x1='256' y1='48' x2='256' y2='464' style='fill:none;stroke:#494949;stroke-miterlimit:10;stroke-width:32px'/><line x1='464' y1='256' x2='48' y2='256' style='fill:none;stroke:#494949;stroke-miterlimit:10;stroke-width:32px'/></svg>
+        </a>
+     </div>
+        <svg *ngIf="isCollapsedProjectTwo" (click)="toggleCollapseTwo()"xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        <svg *ngIf="!isCollapsedProjectTwo" (click)="toggleCollapseTwo()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </div>
 </div>
 
 <div class="project">
     <h3>Nacira</h3>
-    <p>Relaunch der personal Website</p>
-    <img class="project_img" src="../../assets/img/nacira.png">
-    <h3>Verwendete Technologien</h3>
-    <p>Angular, TypeScript, CSS, Routing, GitHub, Adobe Comp</p>
+    <p>Relaunch der personal Website. Zum Abschluss meines Webdeveloper Bootcamps und zu Beginn meines neuen Berufsweges, habe ich meine Website neu gestaltet.</p>
+    <div *ngIf="isCollapsedProjectThree">  
+        <img class="project_img" src="../../assets/img/nacira.png">
+        <h3>Verwendete Technologien</h3>
+        <p>Angular, TypeScript, CSS, Routing, GitHub, Adobe Comp</p>
+    </div>
+    <div class="footer">
+        <div class="icon-wrap">
+            <a href="https://github.com/nacirabogenschneider/angular">
+            <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill="#494949" viewBox='0 0 512 512'><title>ionicons-v5_logos</title><path d='M256,32C132.3,32,32,134.9,32,261.7c0,101.5,64.2,187.5,153.2,217.9a17.56,17.56,0,0,0,3.8.4c8.3,0,11.5-6.1,11.5-11.4,0-5.5-.2-19.9-.3-39.1a102.4,102.4,0,0,1-22.6,2.7c-43.1,0-52.9-33.5-52.9-33.5-10.2-26.5-24.9-33.6-24.9-33.6-19.5-13.7-.1-14.1,1.4-14.1h.1c22.5,2,34.3,23.8,34.3,23.8,11.2,19.6,26.2,25.1,39.6,25.1a63,63,0,0,0,25.6-6c2-14.8,7.8-24.9,14.2-30.7-49.7-5.8-102-25.5-102-113.5,0-25.1,8.7-45.6,23-61.6-2.3-5.8-10-29.2,2.2-60.8a18.64,18.64,0,0,1,5-.5c8.1,0,26.4,3.1,56.6,24.1a208.21,208.21,0,0,1,112.2,0c30.2-21,48.5-24.1,56.6-24.1a18.64,18.64,0,0,1,5,.5c12.2,31.6,4.5,55,2.2,60.8,14.3,16.1,23,36.6,23,61.6,0,88.2-52.4,107.6-102.3,113.3,8,7.1,15.2,21.1,15.2,42.5,0,30.7-.3,55.5-.3,63,0,5.4,3.1,11.5,11.4,11.5a19.35,19.35,0,0,0,4-.4C415.9,449.2,480,363.1,480,261.7,480,134.9,379.7,32,256,32Z'/></svg>
+        </a>
+        <a href="https://nacira.de/">
+            <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 512 512'><title>ionicons-v5-e</title><path d='M256,48C141.13,48,48,141.13,48,256s93.13,208,208,208,208-93.13,208-208S370.87,48,256,48Z' style='fill:none;stroke:#494949 ;stroke-miterlimit:10;stroke-width:32px'/><path d='M256,48c-58.07,0-112.67,93.13-112.67,208S197.93,464,256,464s112.67-93.13,112.67-208S314.07,48,256,48Z' style='fill:none; stroke:#494949 ;stroke-miterlimit:10;stroke-width:32px'/><path d='M117.33,117.33c38.24,27.15,86.38,43.34,138.67,43.34s100.43-16.19,138.67-43.34' style='fill:none;stroke:#494949;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/><path d='M394.67,394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43,16.19-138.67,43.34' style='fill:none;stroke:#494949;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/><line x1='256' y1='48' x2='256' y2='464' style='fill:none;stroke:#494949;stroke-miterlimit:10;stroke-width:32px'/><line x1='464' y1='256' x2='48' y2='256' style='fill:none;stroke:#494949;stroke-miterlimit:10;stroke-width:32px'/></svg>
+        </a>
+     </div>
+        <svg *ngIf="isCollapsedProjectThree" (click)="toggleCollapseThree()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        <svg *ngIf="!isCollapsedProjectThree" (click)="toggleCollapseThree()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </div>
 </div>
 
+<div class="project">
+    <h3>Singularity - HR</h3>
+    <p>Relaunch der Business Website. Erhalt des Logos und der Farben. Dynamische Inhalte, Newsblog, Bilingual (Deutsch/Englisch).</p>
+    <div *ngIf="isCollapsedProjectFour">
+        <img class="project_img" src="../../assets/img/singularity.png">
+        <h3>Project Details</h3>
+        <p>Webdesign, Graphics, Wordpress, CSS</p>
+    </div>
+    <div class="footer">
+        <a href="https://singularity-hr.com/">
+            <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 512 512'><title>ionicons-v5-e</title><path d='M256,48C141.13,48,48,141.13,48,256s93.13,208,208,208,208-93.13,208-208S370.87,48,256,48Z' style='fill:none;stroke:#494949 ;stroke-miterlimit:10;stroke-width:32px'/><path d='M256,48c-58.07,0-112.67,93.13-112.67,208S197.93,464,256,464s112.67-93.13,112.67-208S314.07,48,256,48Z' style='fill:none; stroke:#494949 ;stroke-miterlimit:10;stroke-width:32px'/><path d='M117.33,117.33c38.24,27.15,86.38,43.34,138.67,43.34s100.43-16.19,138.67-43.34' style='fill:none;stroke:#494949;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/><path d='M394.67,394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43,16.19-138.67,43.34' style='fill:none;stroke:#494949;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/><line x1='256' y1='48' x2='256' y2='464' style='fill:none;stroke:#494949;stroke-miterlimit:10;stroke-width:32px'/><line x1='464' y1='256' x2='48' y2='256' style='fill:none;stroke:#494949;stroke-miterlimit:10;stroke-width:32px'/></svg>
+        </a>
+        <svg *ngIf="isCollapsedProjectFour" (click)="toggleCollapseFour()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        <svg  *ngIf="!isCollapsedProjectFour" (click)="toggleCollapseFour()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </div>
+</div>
+
+<div class="project">
+    <h3>Wolfgang-Borchert-Schule</h3>
+    <p>Grafik - und Webdesign einer neu gegründeten Grundschule in Hamburg. Kontinuierliche Beratung und Betreuung in Design Fragen.</p>
+    <div *ngIf="isCollapsedProjectFive">
+        <img class="project_img" src="../../assets/img/wbs.png">
+        <h3>Project Details</h3>
+        <p>Farbkonzept, Grafik Design, Logo Design, Illustrationen, Grafiken, Webdesign, Wordpress, CSS-Anpassungen, Flyer, Plakate</p>
+    </div>
+    <div class="footer">
+        <a href="https://wolfgang-borchert-schule.hamburg.de/">
+            <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 512 512'><title>ionicons-v5-e</title><path d='M256,48C141.13,48,48,141.13,48,256s93.13,208,208,208,208-93.13,208-208S370.87,48,256,48Z' style='fill:none;stroke:#494949 ;stroke-miterlimit:10;stroke-width:32px'/><path d='M256,48c-58.07,0-112.67,93.13-112.67,208S197.93,464,256,464s112.67-93.13,112.67-208S314.07,48,256,48Z' style='fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:32px'/><path d='M117.33,117.33c38.24,27.15,86.38,43.34,138.67,43.34s100.43-16.19,138.67-43.34' style='fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/><path d='M394.67,394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43,16.19-138.67,43.34' style='fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px'/><line x1='256' y1='48' x2='256' y2='464' style='fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:32px'/><line x1='464' y1='256' x2='48' y2='256' style='fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:32px'/></svg>
+        </a>
+        <svg *ngIf="isCollapsedProjectFive" (click)="toggleCollapseFive()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        <svg *ngIf="!isCollapsedProjectFive" (click)="toggleCollapseFive()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </div>
+</div>
 
 </section>

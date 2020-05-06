@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
     'typescript',
     'css',
     'sass',
+    'scss',
     'html',
     'react',
     'angular',
@@ -59,7 +60,8 @@ export class HomeComponent implements OnInit {
     'agil',
     'developer',
     'firefox',
-    'firestore'
+    'firestore',
+    'mysql'
   ]
   
   skillsToHave = [] 
@@ -70,15 +72,12 @@ export class HomeComponent implements OnInit {
 
   addToArray() :void{
    this.response && this.skillsToHave.push({'skill': this.response, 'match': this.skillsIHave.includes(this.response.toLowerCase())})
-  
    this.response = ''
   }
 
   matching():void{
-
   this.matchies = this.skillsToHave.filter(m => m.match == true)
   this.matchesInProcent = Math.floor(100 /(this.skillsToHave.length / this.matchies.length))
-  console.log('Matchies', this.matchies )
   }
 
   constructor() { }
