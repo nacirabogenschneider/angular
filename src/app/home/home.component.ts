@@ -71,7 +71,7 @@ export class HomeComponent implements OnInit {
   matchesInProcent: number
 
   addToArray() :void{
-   this.response && this.skillsToHave.push({'skill': this.response, 'match': this.skillsIHave.includes(this.response.toLowerCase())})
+   this.response && this.skillsToHave.push({'skill': this.response, 'match': this.skillsIHave.includes(this.response.toLowerCase().trim())})
    this.response = ''
   }
 
